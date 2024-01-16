@@ -1,0 +1,17 @@
+# --------------------------------------------------------------------------------
+# This yaml file is for internal use only (design time).
+# It will NOT be available to the end user to edit.
+# Put here only design parameters that will be loaded every time the app launches.
+#
+# Note:
+# userconfig has a special meaning:
+# - false means thar user.yaml will never be loaded nor used. In this case the User
+#         global variable is set to nil and you as a programmer should not use it.
+# - true  means that the first time the application runs it will copy the user.yaml
+#         file to $HOME/.config/<appname>/<appname>.yaml and will read it.
+#         It will also recreate the file if it has been deleted.
+# --------------------------------------------------------------------------------
+modulename: github.com/flevin58/yamlapp
+name: "Go YAML application template"
+version: "1.0"
+userconfig: true
